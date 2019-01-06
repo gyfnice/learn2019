@@ -1,5 +1,5 @@
-function observe(value, cb) {
-	Object.keys(value).forEach((key) =>  defineReactive(value, key, value[key], cb))
+function observe(obj, cb) {
+	Object.keys(obj).forEach((key) =>  defineReactive(obj, key, obj[key], cb))
 }
 
 function defineReactive(obj, key, val, cb) {
